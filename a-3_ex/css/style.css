@@ -50,6 +50,7 @@ li {
   width: 600px;
   height: 60px;
   background-color: skyblue;
+  z-index: 9;
 }
 .gnb > li {
   background-color: aquamarine;
@@ -82,4 +83,68 @@ li {
 .depth2 > li > a:hover {
   color: #fff;
   background-color: tomato;
+}
+/* 비주얼 */
+.silde {
+  width: 1200px;
+  height: 300px;
+  background-color: aquamarine;
+}
+.silde-all {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.silde-all > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.silde-all > li > a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.silde-all > li > a > img {
+  width: 100%;
+}
+.silde-all > li > a > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+/* 콘텐츠 */
+.contents {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  background-color: tan;
+}
+.c1 {
+  width: calc(100% / 3);
+  height: 200px;
+  background-color: yellowgreen;
+}
+.c2 {
+  width: calc(100% / 3);
+  height: 200px;
+  background-color: rgb(183, 207, 255);
+}
+.c3 {
+  width: calc(100% / 3);
+  height: 200px;
+  background-color: yellowgreen;
+}
+.c1 h4 {
+  width: 90px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
 }
